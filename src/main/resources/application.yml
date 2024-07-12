@@ -1,4 +1,6 @@
 spring:
+  lifecycle:
+    timeout-per-shutdown-phase: 15s
   sql:
     init:
       mode: always
@@ -34,6 +36,7 @@ management:
         include: refresh
 
 server:
+  shutdown: graceful
   port: 9001
   tomcat:
     connection-timeout: 2s
