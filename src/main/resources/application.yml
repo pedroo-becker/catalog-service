@@ -7,9 +7,9 @@ spring:
 #      schema-locations: classpath:db/migration/V1__Initial_schema.sql
 #      data-locations: db/migration/V2__Initial_data.sql
   datasource:
-    username: postgres
-    password: postgres
-    url: jdbc:postgresql://polar-postgres:5432/polardb_catalog
+    username: user
+    password: password
+    url: jdbc:postgresql://localhost:5432/polardb_catalog
     hikari:
       connection-timeout: 2000 #ms
       maximum-pool-size: 5
