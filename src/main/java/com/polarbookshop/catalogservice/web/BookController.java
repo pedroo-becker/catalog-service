@@ -31,10 +31,7 @@ public class BookController {
 
     @GetMapping
     public Iterable<Book> get() {
-        long init = System.currentTimeMillis();
-        Iterable<Book> books = bookService.viewBookList();
-        log.info("Request to get all books {}ms", System.currentTimeMillis() - init);
-        return books;
+        return bookService.viewBookList();
     }
 
     @GetMapping("{isbn}")

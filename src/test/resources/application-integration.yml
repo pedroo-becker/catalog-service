@@ -1,7 +1,7 @@
 spring:
   datasource:
     url: jdbc:tc:postgresql:14.4:///
-  flyway:
-    baseline-on-migrate: true
-    baseline: true
-    baseline-version: 0
+#  flyway:
+#    baseline-on-migrate: true
+#    baseline: true
+#    baseline-version: 0
